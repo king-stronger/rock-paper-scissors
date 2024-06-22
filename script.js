@@ -56,7 +56,6 @@ function playRound(humanChoice, computerChoice){
 }
 
 function playGame(){
-    console.log("Bisou")
     for(let i = 0; i < 5; i++){
         let humanSelection = getHumanChoice();
         let computerSelection = getComputerChoice();
