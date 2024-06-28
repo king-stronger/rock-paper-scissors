@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.game {
+    padding: 2em;
+    height: 500px;
+    border-radius: 1em;
+    background-color: white;
+    width: min(100% - 5em, 600px);
+}
+
+.game > * + * {
+    margin-top: 3em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.scores {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.player-score, .computer-score {
+    padding: .5em 1em;
+    border-radius: .5em;
+    border: 1px solid #111;
+}
+
+.hands {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rock-btn, .paper-btn, .scissor-btn {
+    width: 20%;
+    padding: 2em;
+    border-radius: 50%;
+    background-color: crimson;
+}
+
+.rock-btn:hover, .paper-btn:hover, .scissor-btn:hover {
+    scale: 1.1;
+    box-shadow: 0 0 3px 2px crimson;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.play > * + * {
+    margin-top: 2em;
+}
+
+.play-btn {
+    padding: 1em;
+    color: white;
+    border-radius: .5em;
+    background-color: crimson;
+}
+
+.play-btn:hover {
+    scale: 1.1;
+    box-shadow: 0 0 3px 2px crimson;
+}
